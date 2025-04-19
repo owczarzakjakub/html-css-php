@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tor Samochodowy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_back_ios,arrow_forward_ios" />
+</head>
+<body>
+    <!--
+    przygotuj one page dowolnego miejsca pozwalajacego na rezerwacje uslugi
+    strona ma zawierac:
+    slider sterowany js
+    element z opisem o nas
+    formularz rejestracji umozliwiajacy zarezerwowanie danej uslugo
+    galeria sterowana css
+    w stopce dane adresowe
+    -->
+
+    <header>
+        <h1>Tor Samochodowy Nürburgring</h1>
+        <nav>
+            <div>
+                <a href="#Description">O nas</a>
+            </div>
+            <div>
+                <a href="#Booking">Rezerwacja</a>
+            </div>
+            <div>
+                <a href="#Gallery">Galeria</a>
+            </div>
+            <div>
+                <a href="#Contact">Kontakt</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="Description">
+            <h1>OPIS</h1>
+            <p id="DescriptionParagraph">
+                Tor Nürburgring to miejsce, które każdy miłośnik motosportu powinien odwiedzić choć raz w życiu. 
+                Jego historia, charakterystyka toru i wydarzenia, które są na nim rozgrywane, sprawiają, że jest to miejsce wyjątkowe i niepowtarzalne. 
+                Na torze Nürburgring każdy może poczuć emocje za kierownicą własnego samochodu i spróbować swoich sił na tej trudnej i wymagającej trasie. 
+                Tak, Ty również! Najdłuższy tor na świecie i najbardziej ekscytujący czeka na Ciebie.
+            </p>
+        </section>
+
+        <section id="Booking">
+            <h1>Rezerwacja toru</h1>
+            <form action="script.php" method="POST">
+                <label for="Name">
+                    Imie:
+                    <input type="text" name="Name">
+                </label>
+                <br>
+                <label for="LastName">
+                    Nazwisko:
+                    <input type="text" name="LastName">
+                </label>
+                <br>
+                <label for="PhoneNumber">
+                    Numer telefonu: 
+                    <input type="tel" name="PhoneNumber">
+                </label>
+                <br>
+                <label for="EmailAdress">
+                    Email:
+                    <input type="email" name="EmailAdress">
+                </label>
+                <br>
+                <label for="Date">
+                    Wybierz date wynajęcia: 
+                    <input type="date" name="Date">
+                </label>
+                <br>
+                <input type="submit" value="Sprawdz oferte">
+            </form>
+        </section>
+    <section id="Gallery">
+        <section id="slider">
+            <section id="left">
+                <button onclick="updatePhotoMinus()">
+                    <span class="material-symbols-outlined">
+                        arrow_back_ios
+                    </span>
+                </button>
+            </section>
+            <section id="mid">
+                <img src="1.jpg" alt="aktywne zdjecie" id="photo1">
+            </section>
+            <section id="right">
+                <button onclick="updatePhotoPlus()">
+                    <span class="material-symbols-outlined">
+                        arrow_forward_ios
+                    </span>
+                </button>
+            </section>
+        </section>
+        <h1>Galeria</h1>
+        <img src="1.jpg" alt="photo1" class="photos">
+        <img src="2.jpg" alt="photo2" class="photos">
+        <img src="3.jpg" alt="photo3" class="photos">
+        <img src="4.jpg" alt="photo4" class="photos">
+        <img src="5.jpg" alt="photo5" class="photos">
+    </section>
+    </main>
+
+    
+
+    <footer id="Contact">
+        <p>Kontakt: 000 000 000</p>
+        <p>Email: kotomiler@gmail.com</p>
+    </footer>
+
+</body>
+<script src="script.js"></script>
+</html>
