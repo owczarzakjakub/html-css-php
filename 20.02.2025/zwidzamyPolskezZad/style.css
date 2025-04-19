@@ -1,0 +1,64 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: maroon;
+    text-align: center;
+    padding: 2px;
+}
+#left, #mid, #right{
+    background-color: lightsalmon;
+    height: 527px;
+}
+#left, #right{
+    width: 15%;
+}
+#mid{
+    width: 70%;
+}
+aside{
+    background-color: maroon;
+    height: 70px;
+}
+button{
+    background-color: lightsalmon;
+    color: maroon;
+    border: 0;
+    font-size: 400%;
+    display: block;
+    margin: auto;
+    padding-top: 210px;
+}
+aside > img{
+    height: 70px;
+    animation-name: mini;
+    animation-duration: 4s;
+}
+@keyframes mini {
+    from {padding-left: 50px;};
+    to {padding-left: 0px;}
+}
+
+main #mid img{
+    display: block;
+    margin: auto;
+    padding-top: 45px;
+}
+
+main #mid img:hover{
+    animation-name: midphoto;
+    animation-duration: 5s;
+}
+
+@keyframes midphoto{
+    from {scale: 100%;}
+    to {scale: 120%;}
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
