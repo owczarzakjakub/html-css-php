@@ -1,2 +1,2 @@
 # html-css-php
-some of my lessons mini project
+some of my lessons mini projects
